@@ -2,10 +2,18 @@ sudo apt install git apache2 -y
 
 git clone "https://github.com/librespeed/speedtest.git"
 
-git clone "https://github.com/hashinfotech/speedtest.git"
-
 cd speedtest
 
-cp -R backend *.js index.html /var/www/html/
+cp -R backend *.js /var/www/html/
+
+cd ..
+
+rm -R speedtest
+
+git clone "https://github.com/hashinfotech/speedtest.git"
+
+cp *.png logo.jpg index.html /var/www/html/
 
 chown -R www-data *
+
+systemctl restart apache2
