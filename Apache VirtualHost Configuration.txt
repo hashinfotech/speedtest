@@ -1,0 +1,13 @@
+EDIT File "/etc/apache2/sites-enabled/000-default.conf" AS:
+
+
+<VirtualHost *:80>
+        ServerName speed.hashinfotech.online
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
+        UseCanonicalName Off
+        <If "tolower(%{SERVER_NAME}) != 'speed.hashinfotech.online'">
+                AllowOverride None
+                Require all denied
+        </If>
+</VirtualHost>

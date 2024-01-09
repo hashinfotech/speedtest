@@ -1,0 +1,5 @@
+wget "https://drive.google.com/uc?export=download&id=1oPlxOyuCJtH-ASQxZ6bbUrHms2ggnafY" -O chat.png
+
+wget "https://drive.google.com/uc?export=download&id=18FBoOhI2-ZxbcQTAAdW_dFWBqpCzGMGF" -O logo.jpg
+
+wget "https://drive.google.com/uc?export=download&id=1zcprETLf3dQtGH3JZWKL2dKdrQTkEsA2" -O favicon.jpg
