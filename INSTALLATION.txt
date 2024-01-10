@@ -1,4 +1,4 @@
-sudo apt install git apache2 -y
+sudo apt install git php apache2 -y
 
 git clone "https://github.com/librespeed/speedtest.git"
 
